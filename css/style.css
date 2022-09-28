@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+body{
+   font-family: "Lato";
+   background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+}
+
+[class*="__container"]{
+   max-width: 1230px;
+   margin: 0 auto;
+   border-radius: 10px;
+   background-color: white;
+}
+.page__container{
+   box-shadow: 10px 10px 10px black ;
+   padding: 15px;
+   margin-bottom: 50px;
+}
+.main__title{
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   margin-bottom:40px;
+   color: #1E212C;
+}
+.main__text {
+   margin-bottom: 48px;
+   color: #424551;
+   line-height: 160%;
+}
+.subtitle {
+   color:#1E212C;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 150%;
+   margin-bottom: 24px;
+}
+.main__ul li{
+   color: #424551;
+   line-height: 160%;
+   background: url(../img/icons/Vector.svg) 0 6px no-repeat;
+   padding-left: 32px;
+}
+.main__ul li:not(:last-child){
+   margin-bottom: 4px;
+}
+.main__ul li:last-child{
+   margin-bottom: 50px;
+}
+.teacher {
+   color: #1E212C;
+   line-height: 150%;
+   font-weight: 700;
+   margin-bottom: 8px;
+}
+.name {
+   color: #1E212C;
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   margin-bottom: 16px;
+}
+.profession {
+   margin-bottom: 32px;
+   font-size: 20px;
+   line-height: 150%;
+   color: #787A80;
+}
+.sub__ul li{
+   color: #424551;
+   font-weight: 700;
+   line-height: 160%;
+   padding-left: 24px;
+}
+.sub__ul li:not(:last-child){
+   margin-bottom: 4px;
+}
+.sub__ul li:last-child{
+   margin-bottom: 32px;
+   background: url(../img/icons/Profile.svg) 0 4px no-repeat;
+}
+.sub__ul li:nth-child(2){
+   background: url(../img/icons/Play.svg) 0 4px no-repeat;
+}
+.sub__ul li:first-child{
+   background: url(../img/icons/Star.svg) 0 4px no-repeat;
+}
+.last__text {
+   color: #424551;
+   line-height: 160%;
+   padding-bottom: 15px;
+}
+
+.footer__container{
+   padding:15px;
+}
+.main__link:hover{
+   display: inline-block;
+   background-color: #794f45;
+   border-radius: 10px;
+}
+.main__link:visited{
+   color: yellow;
+}
+.main__link:focus{
+   border: 5px dashed crimson;
+   display: inline-block;
+}
+.footer__ol{
+   display: none;
+}
+.footer__ul li:hover ol{
+   display: block;
+   color: red;
+}
+.footer__ol li::before{
+   content: "(";
+}
+.footer__ol li::after{
+   content: ")";
+}
+.game {
+   margin-bottom: 50px;
+}
+.game__container {
+   background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%), url(/img/vedmak.jpg) center no-repeat;
+max-width: 1230px;
+}
+.block1 {
+   width: 50px;
+   height: 50px;
+background: #000;
+}
+.block2 {
+   width: 355px;
+   height: 50px;
+   background: green;
+   visibility: hidden;
+}
+.block3 {
+   width: 50px;
+   height: 74px;
+   background: green;
+   margin-left: 305px;
+   visibility: hidden;
+}
+.block4 {
+   width: 355px;
+   height: 50px;
+   background: green;
+   margin-left: 305px;
+   visibility: hidden;
+}
+.block5 {
+   width: 20px;
+   height: 74px;
+   background: green;
+   margin-left: 640px;
+   visibility: hidden;
+}
+.block6 {
+   width: 355px;
+   height: 15px;
+   background: green;
+   margin-left: 640px;
+   visibility: hidden;
+   text-align: center;
+   text-transform: uppercase;
+   padding-bottom: 17px;
+
+}
+.block7{
+   width: 50px;
+   height: 50px;
+   background-color: red;
+   margin-left: 945px;
+   visibility: hidden;
+   text-align: center;
+   padding-top: 10px;
+}
+.block1:hover + .block2{
+   visibility: visible;
+}
+.block2:hover{
+   visibility: visible;
+}
+.block2:hover + .block3{
+   visibility: visible;
+}
+.block3:hover{
+   visibility: visible;
+}
+.block3:hover + .block4{
+   visibility: visible;
+}
+.block4:hover{
+   visibility: visible;
+}
+.block4:hover + .block5{
+   visibility: visible;
+}
+.block5:hover{
+   visibility: visible;
+}
+.block5:hover + .block6{
+   visibility: visible;
+}
+.block6:hover{
+   visibility: visible;
+}
+.block6:hover + .block7{
+   visibility: visible;
+}
+.block7:hover{
+   visibility: visible;
+}
+#prize{
+   display: none;
+
+}
+.block7:active + #prize{
+   display: inline-block;
+}
